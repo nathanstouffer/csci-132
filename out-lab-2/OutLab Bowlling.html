@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Outlab 1: Bowling</h1>
+<h2>Purpose</h2>
+<p>The purpose of this programming assignment is to help you use the skills you learned in CSCI&nbsp; 127, and get you more familiar with Java.</p>
+<h2>Partners</h2>
+<p>You may (and are&nbsp;<strong>strongly</strong>&nbsp;encouraged to) work with <strong>at most</strong> one other partner on this assignment. You and your partner must be in the same lab section. If you work with a partner, submit one solution with both of your names on it.&nbsp;</p>
+<p>Just because this one can be done with a partner&nbsp;<strong>DO NOT</strong> assume all can be done with a partner. <strong>I will always say when you can do an </strong><g class="gr_ gr_83 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="83" data-gr-id="83">inlab</g><strong> or&nbsp;</strong><g class="gr_ gr_84 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="84" data-gr-id="84">outlab</g><strong> with a partner.</strong>&nbsp;</p>
+<h2>Assignment</h2>
+<p>Write a program that simulates and scores a game of bowling. As background information, here is an&nbsp;<a href="http://bowling.about.com/od/rulesofthegame/a/bowlingscoring.htm">explanation</a>&nbsp;of terminology and scoring.</p>
+<p>Your game will need to keep score for at least one player, multiple players are allowed. 10 frames for each player, and if the final frame is a strike or spare they roll the 11th frame.</p>
+<h2>Instructions</h2>
+<ul>
+<li>Make sure you use Netbeans, Eclipse or another approved IDE (No BlueJ, NO PYTHON).&nbsp;</li>
+<li>Create a class named Bowling<strong>&nbsp;that will manage the game....</strong>my public static void main was in my bowling, I set things up in constructor then called play() and that method handled the 10 frames, including calling methods to do things such as print the formatted output.&nbsp;<span style="color: #cf2a27;"><strong>I also used a Frame class. You can use more than one .java file</strong></span></li>
+<li>Create a &nbsp;<strong>Bowling</strong>&nbsp;class such that when the main method of the Driver class is run you simulate bowling, <a href="http://www.cs.montana.edu/hunterl/132/labs/BowlingOutput.png" target="_blank" rel="noopener noreferrer">HERE IS THE FORMATTED OUTPUT.</a>&nbsp; It is a screen capture of me running my program five times. Note: match the output format exactly! You only need to run it once, match one of the lines....with your random scores that come up, not mine.&nbsp;</li>
+<li>Your bowling game should knock down pins randomly, use a random number generator.......but just like in real bowling (no I do not bowl) higher numbers should be weighted more so you roll more 7s than 2s for instance. 0, 1, 2, 3, 4, 5 should all have a weight of 1.&nbsp; 6 should have a weight of 2.&nbsp; 7 and 10 should have a weight of 3,&nbsp; 8 and &nbsp;9 should have a weight of 4 for first roll only. <g class="gr_ gr_111 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" id="111" data-gr-id="111">Second</g> roll should be weighted all equal but you should only knock down how many of the 10 pins are left after the first roll. Weights make the game more fun to play.&nbsp;</li>
+<li>Any spare or strike (anytime you get all 10 pins down on roll1 or roll2) you should do the scoring properly adding to the previous frame. &nbsp;</li>
+<li><g class="gr_ gr_118 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins doubleReplace replaceWithoutSep" id="118" data-gr-id="118">10th</g> frame should be done properly. Handling spares and strikes in the 10th frame properly.&nbsp;</li>
+<li>You should set your game up to hold on to all frames, meaning first and second ball scores and each frame total score (This is stored in an instance of the Frame class.....it will make it easier in the long run.&nbsp;</li>
+<li>Feel free to add two player games. Put in some skill by a player instead of just randomness. Still needs to be able to do random numbers also.&nbsp;</li>
+<li>import java.util.random and look up the Random class to use random number generation.</li>
+<li>Helpful hint:&nbsp;</li>
+<ul>
+<li>Test without random numbers, force certain scores to happen with a test data set to make sure your game is working properly. All strikes <g class="gr_ gr_97 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar multiReplace" id="97" data-gr-id="97">equals</g> a perfect game of 300....test that.&nbsp;</li>
+</ul>
+</ul>
+<h2>Hints and Assumptions</h2>
+<ul>
+<li>Design your solution out on paper before you start coding.</li>
+<li>Design first. Translate into a programming language (Java) second.</li>
+<li>When the final frame contains a strike or spare, the frame needs to be printed differently. Please study the output transcript above carefully to see how.</li>
+</ul>
+<p><strong>Update:&nbsp;</strong>I put my play() call in a for loop that called it five times and gave the following output:&nbsp;<a href="https://www.cs.montana.edu/hunterl/132/labs/BowlingOutput.png" target="_blank" rel="noopener noreferrer">Click Here</a>&nbsp;You need to match one line, or one 10 frame game of this screen capture with your random scores (don't copy my scores down, the game should run dynamically).&nbsp;</p>
+<h2>Grading - 100 points</h2>
+<ul>
+<li>10 points - open frames are scored correctly. All or nothing.</li>
+<li>10 points - excepting the final frame, frames with spares are scored correctly. All or nothing.</li>
+<li>10 points - if the final frame is a spare, it is scored correctly. All or nothing.</li>
+<li>10 points - excepting the final frame, frames with strikes are scored correctly. All or nothing.</li>
+<li>10 points - if the final frame is a strike, it is scored correctly. All or nothing.</li>
+<li>10 points - excepting the final frame, the output format matches the output format in the above transcript exactly. There will be a 3 point deduction for each type of mistake up to 10 points.</li>
+<li>28 points (4 points each) - The game plays properly....All is working.&nbsp;</li>
+<li>12 points - the solution is of high quality: object-oriented principles are used, good programming practices are used, redundant code is avoided, Javadoc comments are used, etc.</li>
+</ul>
+<h2>Submission</h2>
+<p>Upload&nbsp;the&nbsp;<strong>Bowling.java</strong>&nbsp;file AND ANY OTHER .JAVA FILES YOU HAVE to Assignments in D2L by 2/20 at <g class="gr_ gr_122 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" id="122" data-gr-id="122">5pm</g>. Late submissions receive no credit, but partial credit can be earned by making an <g class="gr_ gr_597 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="597" data-gr-id="597">on time</g> submission even if it isn't working properly.&nbsp;Make sure both partners (no teams of three) are in the comments at the top of the file and the comments in the upload.&nbsp;</p>
+</body>
+</html>

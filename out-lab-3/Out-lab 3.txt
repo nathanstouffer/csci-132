@@ -1,0 +1,25 @@
+Three Classes needed
+	Driver
+	LL Manager
+	Node
+
+You will read input from a text file and add each input as a new Node.  
+You will add the Node to your linked list "in order" this means by ID, but if the IDs are the same then you will need to add by Last name. 
+Input will be in the form of   ID, LastName, First Name, <new line>
+Each line will have all three values, but ID numbers can, and will be duplicate. 
+
+	Creating a list from the file is (20 points)
+	Keeping the list in order properly is (10 points)
+	You will use the format you did inlab and what I covered in class to build your linked list from reading from the text file I provide. 
+	There is an example of how to read from a file posted on lab day's D2L
+	You will create a menu that allows you to do the following:
+
+Press 1 to load list from file                                                      (20 points)
+Press 2 to load list with individual item from user input           (10)
+Press 3 to print list inorder                                                         (5)   
+Press 4 to print list backwards                                                   (5)
+Press 5 to remove item                                                              (10) 
+Press 6 to delete entire list                                                        (5)
+Press -1 to exit
+
+You will need to write methods to handle all the above instructions to get points in parentheses.  
